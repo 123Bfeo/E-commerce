@@ -1,0 +1,15 @@
+.ButtonGoToAuthentication {
+	display: flex;
+	justify-content: center;
+	gap: 10em;
+}
+.ButtonGoToAuthentication button {
+	background: var(--secondary20);
+	border: none;
+	padding: 8px 16px;
+	font-size: 1em;
+	font-weight: 700;
+}
+.ButtonGoToAuthentication button a {
+	color: var(--white);
+}

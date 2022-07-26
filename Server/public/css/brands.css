@@ -1,0 +1,19 @@
+.brands {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.brand-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.brand {
+  font: var(--subtituloH2);
+  color: white;
+}
+.brand:hover {
+  color: var(--placeholder);
+}

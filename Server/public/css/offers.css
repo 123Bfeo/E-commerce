@@ -1,0 +1,39 @@
+.card_item_Offers {
+  width: 100%;
+}
+.targ {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+}
+.card_item_Off {
+  width: 16em;
+  margin: 10px;
+}
+.inf_item {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.conte_item_img_off {
+  width: 100%;
+}
+.conte_item_img_off img {
+  width: 100%;
+}
+.tl_pr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.descrip_item {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.link_item {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.767);
+}

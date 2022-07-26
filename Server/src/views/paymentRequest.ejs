@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/Head') %>
+  <body>
+    <%- include('./partials/HeaderClient') %>
+    <main class="mainPaymentRequest">
+      <section class="informacionTarjeta">
+        <div class="creditCard">
+          <h3 class="creditcardtitle">Tarjeta de Crédito</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+          <button class="addCard"> 
+            <i class="fas fa-plus"></i>
+            Agregar Tarjeta </button>
+        <form action="cardInformation">
+          <label for="numeroTarjeta">
+            <input
+              type="text"
+              name="numeroTajertaId"
+              id="numeroTarjeta"
+              placeholder="Número de tarjeta"
+            />
+          </label>
+          <label for="nombreApellido">
+            <input
+              type="text"
+              name="nombre"
+              id="nombreApellido"
+              placeholder="Nombre y apellido"
+            />
+          </label>
+          <div>
+            <div>
+              <label for="fechaExpiracion">
+                <input
+                  type="date"
+                  name="fecha"
+                  id="fechaExpiracion"
+                  placeholder="Fecha de Expiración"
+                />
+              </label>
+              <label for="codigoSeguridad">
+                <input
+                  type="number"
+                  name="codigo"
+                  id="codigoSeguridad"
+                  placeholder="Código de Seguridad"
+                />
+              </label>
+            </div>
+            <div>
+              <label for="tipoDocumento">
+                <input
+                  type="text"
+                  name="documento"
+                  placeholder="Tipo de documento"
+                />
+                <i class="fas fa-chevron-down"></i>
+              </label>
+              <label for="numeroDocumento">
+                <input
+                  type="number"
+                  name="numero"
+                  placeholder="Número de documento"
+                />
+              </label>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section class="resumenCompra">
+        <div class="resumenCompraTitle">
+          <h3 class="resumentitle">Resumen de compra</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="finalItems">
+          <div class="item">
+            
+            <span>x1 USB Speaker Portable</span>
+            <span>$100.00</span>
+          </div>
+          <br>
+          <div class="item">
+           
+            <span>x1 Joystick Pro</span>
+            <span>$100.00</span>
+          </div>
+          <br>
+          <div class="item">
+          
+            <span>x1 Smartphone 5G</span>
+            <span>$100.00</span>
+          </div>
+        </div>
+        <div class="envioProductos">
+          <span>
+            Tus paquetes pueden llegar en envíos diferentes. VERIFICA TU
+            DIRECCIÓN DE ENVÍO. Una vez la compra es finalizada, los cambios
+            dependerán de la disponibilidad de la transportadora.
+          </span>
+        </div>
+        <div class="totalPago">
+          <span>Total</span>
+          <span>$300.00</span>
+        </div>
+        <div class="promocion">
+          <label for="codigoPromocion">
+            <input
+              type="text"
+              name="codigoDescuento"
+              placeholder="Cangear código"
+            />
+            <button class="canjearCodigo">Canjear</button>
+        </div>
+        <button class="finalizarCompra">Finalizar compra</button>
+        <span class="formasPago"> Formas de pago aceptadas </span>
+        <div class="iconosPago">
+          <i class="fab fa-cc-visa"></i>
+          <i class="fab fa-cc-mastercard"></i>
+          <i class="fab fa-cc-amex"></i>
+        </div>
+      </section>
+    </main>
+    <%- include('./partials/Footer') %>
+  </body>
+</html>

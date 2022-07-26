@@ -1,0 +1,17 @@
+:root {
+	--sectionFormText: bold 16px/24px var(--secondFont);
+}
+.sections-form{
+	font: var(--sectionFormText);
+	text-transform: uppercase;
+	inline-size: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.sections-form a {
+	color: var(--white);
+}
+.active {
+	block-size: 4px;
+	background: var(--secondary);
+}

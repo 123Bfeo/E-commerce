@@ -1,0 +1,25 @@
+.Header {
+	background: var(--bg-dark);
+	inline-size: 100vw;
+	block-size: 5em;
+	position: sticky;
+	top: 0;
+	z-index: 1111;
+}
+.HeaderContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	block-size: 100%;
+	background: var(--bg-dark);
+	z-index: 111;
+}
+.OpenMenuToggle {
+	color: var(--icon-color);
+	font-size: 3em;
+}
+.RightHead {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+}

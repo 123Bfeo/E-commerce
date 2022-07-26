@@ -1,0 +1,69 @@
+.about .descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.about .our-team .descripcion {
+  margin-bottom: 56px;
+}
+.about .subtitulo {
+  font-family: var(--subtituloH2);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.about p {
+  max-width: 736px;
+  text-align: justify;
+  color: var(--text-gray);
+  font-size: 24px;
+  font-family: var(--parrafo);
+}
+
+.about .parrafo-descripcion {
+  width: 376px;
+}
+.about .imagen-banner img {
+  width: 100%;
+  align-items: center;
+}
+
+.about .our-team-cards {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-employee {
+  background-color: var(--gb-dark);
+  width: 230px;
+  border-radius: 4px;
+}
+.card-employee img {
+  width: 100%;
+}
+.card-head img {
+  width: 100%;
+}
+
+.card-foot {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--text-gray);
+  border-radius: 8px;
+}
+
+.card-foot .name {
+  font: var(--btn-small);
+}
+
+.card-foot .job-title {
+  text-align: center;
+  color: var(--text-gray);
+}

@@ -1,0 +1,59 @@
+.titleSesion {
+  color: var(--placeholder20);
+  font-family: var(--secondFont);
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.conteSesion {
+  margin-top: 15px;
+}
+.padre_card_Discount {
+  background-color: antiquewhite;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: var(--bg-dark);
+}
+.cardGeneral {
+  width: 34rem;
+  margin: 10px;
+  display: flex;
+  border-radius: 8px;
+}
+.duoCard {
+  width: 30rem;
+  margin: 10px;
+  border-radius: 8px;
+}
+.duoCard_t {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.card_1 {
+  align-self: center;
+  width: 100%;
+}
+
+.card_3 {
+  align-self: flex-end;
+}
+
+.img_Card {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.344);
+}
+.img_Card:hover {
+  box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.609);
+}
+.discount_p {
+  margin-bottom: 5px;
+  color: var(--placeholder20);
+  font-family: var(--secondFont);
+  font-size: 1.8em;
+  font-weight: bold;
+}

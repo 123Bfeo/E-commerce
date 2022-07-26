@@ -1,0 +1,61 @@
+.btn-small {
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+.btn {
+  border: 1px solid var(--secondary);
+  padding: 12px 24px;
+  border-radius: 4px;
+  color: var(--white);
+  background: none;
+  font: var(--btn-small);
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btnFirst {
+  background: var(--secondary);
+  border: 1px solid var(--white);
+}
+.btnSecond {
+  color: var(--secondary);
+}
+
+.btn-add i {
+  color: var(--white);
+}
+.btn-add-cart {
+  padding: 8px 12px;
+  min-width: 40px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary);
+  color: var(--white);
+  font: var(--btn-small);
+  border: none;
+  max-height: 40px;
+}
+.btn-add-cart i {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .form-login .btn-login {
+    font-size: 16px;
+  }
+}
+
+.btn-login {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: 700;
+}
+.btn-register {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  font-weight: 700;
+}

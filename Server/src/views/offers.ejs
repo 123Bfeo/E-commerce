@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./components/Head/Head')%>
+  <%-include('./Components/Header/Header') %>
+  <section class="card_item_Offers  wrapper ">
+  <div class="targ">
+  <% for(let i = 0; i<data.product.length; i++) { %>
+     <a class="link_item" href='/api/details/<%=data.product[i].id%>'>
+      <article class="card_item_Off">
+        <div class="inf_item">
+          <div class="conte_item_img_off">
+            <img src="../../img/products/headset.jpeg" alt="" />
+          </div>
+          <div class="conte_item_inf_off">
+            <div class="tl_pr">
+              <h2><%=data.product[i].name%> </h2>
+              <h4>$<%= data.product[i].price %></h4>
+              <h1></h1>
+            </div>
+            <p class="descrip_item">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
+              possimus quos ipsam nemo sint odio.
+            
+            </p>
+          </div>
+        </div>
+    </article>
+     </a>
+    <% } %> 
+  </div>
+  </section>
+  <%-include('./Components/Footer/Footer') %>
+  <body></body>
+</html>

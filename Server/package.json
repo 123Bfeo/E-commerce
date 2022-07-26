@@ -1,0 +1,47 @@
+{
+  "name": "grupo_3_wecol",
+  "version": "1.0.0",
+  "description": "*Link Sprint1:* https://trello.com/invite/b/yI2ayq40/4d43a6fc2c1dbe2d7586c877d8f35118/sprint1 \\ *Link Figma:* https://www.figma.com/file/8Ys6LGI5Kl3sqP7J0lMNBA/WeCol?node-id=0%3A1",
+  "main": "app.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/123Bfeo/Grupo_3_WeCol.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/123Bfeo/Grupo_3_WeCol/issues"
+  },
+  "homepage": "https://github.com/123Bfeo/Grupo_3_WeCol#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "ejs-lint": "^1.2.1",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "method-override": "^3.0.0",
+    "multer": "^1.4.4",
+    "mysql2": "^2.3.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sequelize": "^6.19.0",
+    "sequelize-cli": "^6.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15"
+  }
+}

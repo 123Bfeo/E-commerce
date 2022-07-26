@@ -1,0 +1,171 @@
+.detailsProduct {
+  color: white;
+  display: flex;
+  margin-top: 20px;
+}
+.container-imgP {
+  margin-right: 18px;
+  inline-size: 500px;
+  block-size: 500px;
+}
+.container-imgP img {
+  inline-size: 100%;
+}
+.deliveryStock {
+  margin-top: 10px;
+  display: flex;
+}
+.sendIco {
+  margin-right: 10px;
+}
+.rateCount {
+  display: flex;
+}
+.division {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.count {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.name-price {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.descriptionProduct {
+  margin-top: 10px;
+}
+.fa-truck {
+  color: #e78a00;
+}
+.fa-shopping-cart {
+  color: #e78a00;
+}
+.description-P {
+  width: 58%;
+}
+
+/*******/
+
+.cont h3 {
+  color: rgb(151, 85, 151);
+  font-family: var(--title);
+  margin: 0px 0px 0px 10px;
+}
+
+.cont-text {
+  margin: 0px 0px 0px 30px;
+}
+
+.cont-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--title);
+  color: var(--white);
+}
+
+.cont-label label {
+  margin: 10px;
+}
+
+.d {
+  font-family: "Source Serif Pro";
+  color: var(--secondary);
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.opinion {
+  width: 45%;
+  margin: 25px 35px;
+}
+
+.opinion p {
+  color: var(--white);
+  font-family: var(--span1);
+  font-size: 20px;
+}
+
+.opinion .desc {
+  color: var(--text-gray);
+  font-family: var(--span1);
+}
+
+.etiqueta-blanca {
+  color: var(--white);
+  font-family: var(--title);
+}
+
+.enlaces {
+  font-family: var(--title);
+  color: white;
+  font-size: 20px;
+}
+.enlaces:hover {
+  color: var(--placeholder);
+}
+
+.qa {
+  display: flex;
+}
+
+.qa .question {
+  border-radius: 4px;
+  height: 40px;
+  width: 400px;
+  margin: 30px 15px;
+}
+
+.qa button {
+  height: 40px;
+  margin: 30px;
+  background-color: #e78a00;
+  font-family: var(--title);
+  padding: 5px 5px;
+}
+
+.hiper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hiper a {
+  margin: 25px 30px;
+}
+
+.fa .fa-truck {
+  color: #e78a00;
+}
+
+.title-word {
+  position: static;
+  width: 215px;
+  height: 38px;
+  left: 0px;
+  top: 0px;
+  font-family: var(--title);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25.0705px;
+  line-height: 38px;
+  color: var(--text-gray);
+}
+
+@media screen and (max-width: 580px) {
+  .detalles {
+    flex-direction: column;
+  }
+
+  .cont {
+    width: 90%;
+  }
+
+  .hiper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
