@@ -31,7 +31,7 @@ const userController = {
 					if (bcrypt.compareSync(req.body.password, userToLogin.password)) {
 						delete userToLogin.password;
 						req.session.userLogged = userToLogin
-						return res.redirect("/")
+						return res.redirect("/admin")
 					}
 					else {
 						res.render("./Pages/Login/Login",

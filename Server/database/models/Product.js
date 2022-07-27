@@ -18,7 +18,6 @@ module.exports = function (sequelize, dataTypes) {
 		},
 		image: {
 			type: dataTypes.STRING,
-			defaultValue: 'sergio.png'
 		},
 		category: {
 			type: dataTypes.STRING,

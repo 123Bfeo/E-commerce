@@ -1,0 +1,66 @@
+.conte_cols {
+  background-color: rgba(240, 248, 255, 0.033);
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: 4px 4px 5px hsla(36, 100%, 45%, 0.154);
+}
+.cols {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cols_info {
+  width: 14.8rem;
+  background-color: rgb(255, 255, 255);
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  margin: 5px auto;
+}
+.cols_info p {
+  margin: 0px auto;
+  text-align: center;
+}
+.option_btn {
+  display: flex;
+  justify-content: center;
+}
+
+.option_btn button {
+  width: 94px;
+  height: 38px;
+  margin-left: 5px;
+  border: none;
+  background: rgb(231, 138, 0);
+  border-radius: 6px;
+  transition: 2ms;
+}
+.option_btn button:hover {
+  background: rgb(255, 255, 255);
+  border: solid 1px rgb(231, 138, 0);
+}
+.add {
+  background-color: rgb(231, 138, 0);
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.link_agregar {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.img_product {
+  width: 50px;
+  border-radius: 100%;
+  margin: 10px;
+}

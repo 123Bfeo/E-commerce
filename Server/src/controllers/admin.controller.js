@@ -1,16 +1,15 @@
 
 
-const db = require('../../database/models')
+const DB = require('../../database/models')
 
 const adminController = {
+	// Dashboard usuario Listar los productos 
 	adminController: (req, res) => {
 		const title = "Management";
-		const reqCategory = db.Category.findAll();
-		const reqProduct = db.Product.findAll();
-		Promise.all([reqCategory, reqProduct])
-			.then(([category, product,]) => {
-				res.render('./Pages/Admin/Admin', { title, category, product })
-			})
+		DB.Product.findAll().then((product) => {
+			res.render('./admin/dashboard', { product })
+		})
 	}
+
 }
 module.exports = adminController;

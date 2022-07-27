@@ -8,7 +8,6 @@
   margin-top: 15px;
 }
 .padre_card_Discount {
-  background-color: antiquewhite;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -45,10 +44,10 @@
 .img_Card {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.344);
+  box-shadow: 3px 3px 4px rgb(231, 138, 0);
 }
 .img_Card:hover {
-  box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.609);
+  box-shadow: 3px 3px 4px rgba(255, 255, 255, 0.907);
 }
 .discount_p {
   margin-bottom: 5px;

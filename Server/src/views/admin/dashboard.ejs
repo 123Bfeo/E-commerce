@@ -1,0 +1,38 @@
+<%-include('../Components/Head/Head')%>
+<%-include('../Components/Header/Header') %>
+<section class="wrapper">
+  <div class="add">
+    <a class="link_agregar" href="#Agregar">
+      <p>+Agregar</p>
+    </a>
+  </div>
+  <div class="conte_cols">
+    <% for(let i = 0;i<product.length; i++) { %>
+    <div class="cols">
+      <div class="cols_info">
+        <div>
+          <img class="img_product" src="../../../img/products/<%=product[i].image %>" alt="">
+        </div>
+        <div>
+          <p><%=product[i].name %></p>
+        </div>
+        
+      </div>
+      <div class="cols_info"><p><%=product[i].price %></p></div>
+      <div class="cols_info">
+        <p><%=product[i].description%></p>
+      </div>
+      <div class="cols_info"><p><%=product[i].category %></p></div>
+      <div class="cols_info option_btn">
+        <a href='/product/edit/<%=product[i].id%>'>
+          <button type="submit">Edit</button>
+        </a>
+        <form action="/product/delete/<%=product[i].id%>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+         
+      </div>
+    </div>
+    <% } %>
+  </div>
+</section>

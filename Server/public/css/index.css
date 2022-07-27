@@ -18,6 +18,8 @@
 @import "./productCart.css";
 @import "./contact.css";
 @import "./offers.css";
+@import "./admin/dashboard.css";
+@import "./productEdit.css";
 
 /*@import './hero.css';
 @import './main.css';
@@ -64,7 +66,7 @@
 @import './admin/adminCardProduct.css';
 @import './admin/adminFilterSearch.css';
 @import './admin/adminProductMain.css';
-@import './admin/adminSearch.css';
+@import './admin/dashboard.css';
 @import './admin/admin_productsContainer.css'; */
 
 /* Partials */
@@ -76,15 +78,15 @@
   --white: #fff;
   --bg-dark2: #323945;
   --bg-dark: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    #080c24;
+    #000000;
   --gray10: #44495f;
   --icon-color: var(--white);
 
-  --secondary10: rgb(233, 125, 216);
+  --secondary10: rgb(231, 138, 0);
   --secondary20: rgb(231, 138, 0);
 
-  --placeholder10: rgb(233, 125, 216, 0.5);
-  --placeholder20: rgba(231, 139, 0, 0.488);
+  --placeholder10: rgb(231, 138, 0);
+  --placeholder20: rgba(231, 139, 0, 0.705);
   --text-gray: rgb(167, 167, 167);
   --text-gray-opacity: rgba(91, 91, 91, 0.5);
   --gray2: #383838;

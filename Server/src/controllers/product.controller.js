@@ -46,8 +46,39 @@ const productController = {
       });
 
   },
-
-
+  editProduct: (req, res) => {
+    db.Product.findByPk(
+      req.params.id
+    ).then((product) => {
+      res.render("./products/editProduct", { product })
+    })
+  },
+  updateProduct: (req, res) => {
+    db.Product.update(
+      {
+        name: req.body.name,
+        price: req.body.price,
+        description: req.body.description,
+        discount: req.body.discount,
+        category: req.body.category,
+        Image: req.body.image
+      },
+      {
+        where: {
+          id: req.params.id,
+        },
+      }
+    );
+    res.redirect("/admin");
+  },
+  deleteProduct: (req, res) => {
+    db.Product.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.redirect("/admin");
+  },
 };
 
 module.exports = productController;

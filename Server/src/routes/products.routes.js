@@ -8,7 +8,7 @@ const validateCreateProductFormMiddleware = require('../middlewares/validateCrea
 const productImageMiddleware = require('../middlewares/productImage.middleware');
 const userController = require('../controllers/user.controller');
 const fileProductMiddleware = require('../middlewares/fileProduct.middleware');
-
+const authenticateMiddleware = require('../middlewares/authenticate.middleware');
 const validateCreateProduct = validateCreateProductFormMiddleware.createProduct();
 const fileUpload = multer({
 	storage: fileProductMiddleware,
@@ -20,8 +20,8 @@ const fileUpload = multer({
 router.get('/cart', productController.cartProduct);
 router.post('/create', productController.saveProduct);
 // Editar un producto
-//router.get('/edit/:id', validateCreateProduct, productController.editProduct);
-//router.put('/edit/:id', upload.single('imageEdit'), validateCreateProduct, productController.updateProduct);
+router.get('/edit/:id', validateCreateProduct, productController.editProduct);
+router.put('/edit/:id', fileUpload.single('image'), validateCreateProduct, productController.updateProduct);
 // Detalles de un producto
 router.delete('/delete/:id', productController.deleteProduct);
 
