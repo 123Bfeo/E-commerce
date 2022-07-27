@@ -9,28 +9,27 @@ const productController = {
       })
   },
 
-  cartProduct: (req, res) => {
-    res.render('./products/productCart')
-  },
+  // cartProduct: (req, res) => {
+  //   res.render('./products/productCart')
+  // },
 
+  // Crear productos y guardarlos 
+  createProduct: (req, res) => {
+    res.render('./admin/adminCreate')
+  },
   saveProduct: (req, res) => {
-    console.log(req.body);
+
     db.Product.create(
       {
         name: req.body.name,
         description: req.body.description,
+        price: req.body.price,
+        discount: req.body.discount,
+        image: req.file.filename,
+        category: req.body.category
       });
 
-    res.send('ya la guarde');
-  },
-
-  deleteProduct: (req, res) => {
-    db.Product.destroy({
-      where: {
-        id: req.params.id
-      }
-    })
-    res.send('eliminado')
+    res.redirect("/admin");
   },
 
   //detalle del producto
@@ -46,6 +45,7 @@ const productController = {
       });
 
   },
+  // Editar y actualizar producto
   editProduct: (req, res) => {
     db.Product.findByPk(
       req.params.id
@@ -61,7 +61,7 @@ const productController = {
         description: req.body.description,
         discount: req.body.discount,
         category: req.body.category,
-        Image: req.body.image
+        image: req.file.filename
       },
       {
         where: {
@@ -71,6 +71,8 @@ const productController = {
     );
     res.redirect("/admin");
   },
+
+  // Eliminar Producto
   deleteProduct: (req, res) => {
     db.Product.destroy({
       where: {

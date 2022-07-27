@@ -16,19 +16,21 @@ const fileUpload = multer({
 //Todos los productos
 // router.get('/product', productController.allProducts);
 //Crear un producto
-// router.get('/create', productController.createProduct);
-router.get('/cart', productController.cartProduct);
-router.post('/create', productController.saveProduct);
-// Editar un producto
-router.get('/edit/:id', validateCreateProduct, productController.editProduct);
+router.get('/create', authenticateMiddleware, productController.createProduct);
+router.post('/create', fileUpload.single('image'), productController.saveProduct);
+
+//router.get('/cart', productController.cartProduct);
+
+// Editar y actualizar un producto
+router.get('/edit/:id', authenticateMiddleware, validateCreateProduct, productController.editProduct);
 router.put('/edit/:id', fileUpload.single('image'), validateCreateProduct, productController.updateProduct);
-// Detalles de un producto
+// eliminar un producto
 router.delete('/delete/:id', productController.deleteProduct);
 
 // Buscar un producto por ID
 // router.get('/search/:id', productController.searchProduct);
 
-// router.get('/products', productController.products);
+router.get('/products', productController.products);
 
 module.exports = router;
 

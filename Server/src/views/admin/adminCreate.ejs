@@ -1,53 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include('../partials/Head') %>
+  <%- include('../Components/Head/Head') %>
 
   <body class="adminCreateBody">
-    <%- include('../partials/HeaderClient') %>
+    <%- include('../Components/Header/Header') %>
 
-      <main class="adminCreateMain">
-        <aside class="administratorInformation">
-          <a href="">
-            <h2 class="subtituloH2Small">Administradora</h2>
-          </a>
-          <article class="adminInfo">
-            <div class="adminProfile">
-              <picture> <img src="/img/Ellipse9.png" alt="" /></picture>
-              <h3 class="subtituloH3">Patricia Ochoa</h3>
-            </div>
-            <div class="adminSideOptions">
-              <div>
-                <i class="fas fa-file-invoice"></i>
-                <span>Productos</span>
-              </div>
-              <div>
-                <i class="fas fa-trash-alt"></i>
-                <span>Eliminar Productos</span>
-              </div>
-          </article>
-        </aside>
-        <section class="adminProductInformation">
-          <%- include("./allProductStock") %>
-            <article class="adminSearchProducts">
-              <input type="text" placeholder="Search" />
-              <button class="adminSearchButton">Buscar</button>
-            </article>
-            <article class="adminListOptions">
-              <div class="adminFilterProduct">
-                <div>
-                  <span>Todo</span>
-                  <i class="fas fa-angle-down"></i>
-                </div>
-                <div>
-                  <span>Todas las marcas</span>
-                  <i class="fas fa-angle-down"></i>
-                </div>
-              </div>
-              <i class="fas fa-list"></i>
-            </article>
-            <%- include("./adminListStock") %>
-        </section>
-      </main>
+    <div class="title_set wrapper">
+      <p>Crear Producto</p>
+    </div>
+    <section class="conte_set wrapper">
+      <div>
+        <form
+          action="/product/create"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <div class="data_input">
+            <label for="name"
+              ><input
+                class="input_edit"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nombre del Poducto"
+            /></label>
+          </div>
+          <div class="data_input">
+            <label for="price"
+              ><input
+                name="price"
+                id="price"
+                class="input_edit"
+                type="text"
+                placeholder="Precio del Poducto"
+            /></label>
+          </div>
+          <div class="data_input">
+            <label for="category"
+              ><input
+                name="category"
+                id="category"
+                class="input_edit"
+                type="text"
+                placeholder="Categoria del Poducto"
+            /></label>
+          </div>
+
+          <div class="data_input">
+            <label for="discount"
+              ><input
+                name="discount"
+                id="discount"
+                class="input_edit"
+                type="number"
+                placeholder="Descuento del Poducto"
+            /></label>
+          </div>
+          <div class="data_input">
+            <label for="description"></label>
+            <textarea
+              class="text_area"
+              name="description"
+              id="description"
+              placeholder="Descripcion del Producto"
+            ></textarea>
+          </div>
+
+          <div class="data_input">
+            <input class="image" type="file" name="image" id="image" />
+          </div>
+          <div class="data_input">
+            <button type="submit">Guardar Cambios</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
-
 </html>

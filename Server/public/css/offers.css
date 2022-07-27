@@ -22,6 +22,7 @@
 }
 .conte_item_img_off img {
   width: 100%;
+  height: 200px;
 }
 .tl_pr {
   display: flex;
